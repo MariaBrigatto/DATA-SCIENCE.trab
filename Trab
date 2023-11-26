@@ -1,0 +1,48 @@
+#include<stdio.h>
+main ()
+{
+	
+	float temperatura=0;
+	int  turbidez=0, gordura=0;
+	
+	printf("TEMPERATURA:\n");
+	scanf("%f",& temperatura);
+	
+	if(temperatura > 45)
+		printf("LEITE DE BAIXA QUALIDADE\n");
+		
+	else {
+		
+		if(temperatura <= 45 && temperatura > 0) {
+		
+			printf("TURBIDEZ:\n");
+			scanf("%d",&turbidez);
+			
+			if(turbidez == 1)
+				printf("GORDURA:\n");
+				scanf("%d",)
+			
+			else {
+				
+				if(turbidez == 0) {
+					
+					printf("GORDURA:\n");
+					scanf("%d",&gordura);
+					
+					if(gordura)
+					
+				}
+					
+				
+				
+			}
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+}
