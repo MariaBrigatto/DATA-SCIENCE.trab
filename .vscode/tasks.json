@@ -1,0 +1,41 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C++ build file",
+            "command": "C:/Dev-Cpp/MinGW64/bin/x86_64-w64-mingw32-g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-L",
+                "C:\\Dev-Cpp\\MinGW64\\lib",
+                "-static-libgcc",
+                "-lconio",
+                "-m32",
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Leonardo Neves - 21/11/2023"
+        },
+        {
+            "type": "shell",
+            "label": "C++ run",
+            "command": ".\\${fileBasenameNoExtension}.exe",
+          "dependsOn":["C++ build file"],
+         "dependsOrder": "sequence",
+            "group": {
+                          "kind": "build",
+                           "isDefault": true
+                     }
+          
+         }
+    ],
+    "version": "2.0.0"
+}
