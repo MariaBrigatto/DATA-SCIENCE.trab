@@ -81,7 +81,7 @@ int main() {
 
                     } else if (gordura == 1) {
                         if (temperatura <= 38) {
-                            printf("ODOR: ");
+                            printf("ODOR:\n");
                             scanf("%d", &odor);
                             if (odor) {
                                 printf("LEITE DE ALTA QUALIDADE\n");
@@ -110,7 +110,7 @@ int main() {
                                 if (!gosto)
                                     printf("LEITE DE MEDIA QUALIDADE\n");
                                 else {
-                                    printf("ODOR: ");
+                                    printf("ODOR:\n");
                                     scanf(" %d", &odor);
                                     if (!odor)
                                         printf("LEITE DE ALTA QUALIDADE\n");
